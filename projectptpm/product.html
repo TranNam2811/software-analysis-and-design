@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="product.css" rel="stylesheet" type="text/css">
+    <link href='https://pro.fontawesome.com/releases/v5.10.0/css/all.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+</head>
+<body>
+    <header>
+        <nav class="a menu">
+            <div class="logo">
+                <h1>DMN<span>L</span></h1>
+            </div>
+            <ul>
+                <li><a href="home.html">Trang chủ</a></li>
+                <li><a href="product.html">Sản phẩm</a></li>
+                <li><a href="#About">Thông tin</a></li>
+                <li><a href="#Review">Đánh giá</a></li>
+                <li><a href="#Service">dịch vụ</a></li>
+            </ul>
+
+            <div class="icons">
+                <i class='bx bx-heart'></i>
+                <i class='bx bx-cart-add' ></i>
+                <i class='bx bxs-user' ></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="a">
+            <!-- Product_content -->
+            <div id="Product_img">
+                <!-- Product_img -->
+                <div class="product_left">
+                    <div class="big_group">
+                        <div class="big_group_img">
+                            <img src="img/product1/1.jpg">
+                            <img src="img/product1/2.jpg">
+                            <img src="img/product1/3.jpg">
+                            <img src="img/product1/4.jpg">
+                        </div>
+                        <div class="big_group_btn">
+                            <i class="far fa-chevron-left"></i>
+                            <i class="far fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="small_group">
+                        <div class="small_group_img">
+                            <img src="img/product1/1.jpg" class="active">
+                            <img src="img/product1/2.jpg">
+                            <img src="img/product1/3.jpg">
+                            <img src="img/product1/4.jpg">
+                        </div>
+                        <div class="small_group_btn">
+                            <i class="far fa-chevron-left"></i>
+                            <i class="far fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product_img -->
+
+                <!-- Product_details -->
+                <div class="product_right">
+                    <div class="product_details">
+                        <h1 class="product_name">Giày thể thao</h1>
+                        <div class="product_rating">
+                            <button class="product_evaluate">
+                                <span>4.9</span>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i >
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-alt"></i>
+                            </button>
+                            <button><span>22,9k</span> Đánh giá</button>
+                            <button><span>97,4k</span> Đã bán</button>
+                        </div>
+                        <div class="product_price">
+                            <h3 ><del>$950.00</del> $850.00 </h3>
+                            <a href="#"><p>Giảm 20%</p></a>
+                        </div>
+                        <p>Sản phẩm độc quyền...........</p>
+
+                        <div class="product_options">
+                            <label>
+                            Size:
+                                <select class="input_select">
+                                    <option value="35">35</option>
+                                    <option value="36">36</option>
+                                    <option value="37">37</option>
+                                    <option value="38">38</option>
+                                    <option value="39">39</option>
+                                </select>
+                            </label>
+                            <label>
+                                Màu:
+                                <select class="input_select">
+                                    <option value="Red">Red</option>
+                                    <option value="Yellow">Yellow</option>
+                                    <option value="Green">Green</option>
+                                    <option value="White">White</option>
+                                    <option value="Black">Black</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="add_to_cart">
+                            <div> 
+                                <label for="quantity">Số lượng:</label>
+                                <div>
+                                    <button onclick="reduce_quantity()">-</button>
+                                    <input type="" id="quantity" value="1" min="1">
+                                    <button onclick="increase_quantity()">+</button>
+                                </div>
+                            </div>
+                            <div>
+                                <button><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+                                <button>Mua ngay</button>
+                            </div>
+                        </div>
+                        <div class="product_share"> 
+                            <a href="https://www.facebook.com/nike"><i class='bx bxl-facebook-circle' ></i></a>
+                            <a href="https://twitter.com/Nike?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class='bx bxl-twitter' ></i></a>
+                            <a href="https://www.instagram.com/nike/"><i class='bx bxl-instagram' ></i></a>
+                            <a href="https://www.amazon.com/Nike/s?k=Nike"> <i class='bx bxl-amazon' ></i></a>
+                            <a href="https://www.linkedin.com/company/nike"><i class='bx bxl-linkedin' ></i></a>
+                            <a href="#"><i class='far fa-envelope' ></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product_details -->
+            </div>
+            <!-- Product_content -->
+            
+            <!-- Product_information -->
+            <div class="product_information">
+                <div id="product_tab">
+                    <ul class="tab_bar">
+                        <li class="active"><a href="#tab1">Mô Tả</a></li>
+                        <li><a href="#tab2">Thông Tin Chi Tiết</a></li>
+                        <li><a href="#tab3">Đánh Giá (3)</a></li>
+                    </ul>
+                    <div class="tab_content">
+                        <div id="tab1">
+                            <div class="tab_infromation">
+                                <p>Giày này là mẫu giày thể thao có thiết kế cực đẹp kết hợp với công nghệ đỉnh cao của adidas, adidas Supernova 2 mang đến cảm giác vô cùng thoải mái cho người sử dụng.Giày này có phần upper được làm từ chất liệu mesh thoáng khí, phần đế giữa kết hợp 2 công nghệ Bounce và Boost trứ danh mang đến cho người sử dụng cảm giác êm ái dễ chịu khó tìm thấy ở sản phẩm thông thường. Bạn có thể sử dụng đôi giày này để đi cả ngày hoặc chạy bộ quãng đường rất dài mà không cảm thấy đau chân hay khó chịu gì cả.Đây chắc chắn là một mẫu giày thể thao tuyệt vời mà adidas muốn mang đến cho bạn trong năm nay.</p>
+                            </div>
+                        </div>
+                        <div id="tab2">
+                            <div class="tab_infromation">
+                                <p>Giày này là mẫu giày thể thao có thiết kế cực đẹp kết hợp với công nghệ đỉnh cao của adidas, adidas Supernova 2 mang đến cảm giác vô cùng thoải mái cho người sử dụng.Giày này có phần upper được làm từ chất liệu mesh thoáng khí, phần đế giữa kết hợp 2 công nghệ Bounce và Boost trứ danh mang đến cho người sử dụng cảm giác êm ái dễ chịu khó tìm thấy ở sản phẩm thông thường. Bạn có thể sử dụng đôi giày này để đi cả ngày hoặc chạy bộ quãng đường rất dài mà không cảm thấy đau chân hay khó chịu gì cả.Đây chắc chắn là một mẫu giày thể thao tuyệt vời mà adidas muốn mang đến cho bạn trong năm nay.</p>
+                            </div>
+                        </div>
+                        <div class="tab3">
+                            <div class="tab_infromation">
+                                <!-- Tab_ratings -->
+                                <div class="tab_ratings">
+                                    <div class="rantings_stars">
+                                        <h3>4.9</h3>
+                                        <div> 
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="rantings">
+                                        <div >
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="region">
+                                            <div style="width: 80%"></div>
+                                        </div>
+                                        <h4>3</h4>
+                                    </div>
+                                    <div class="rantings">
+                                        <div >
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="region">
+                                            <div style="width: 60%"></div>
+                                        </div>
+                                        <h4>2</h4>
+                                    </div>
+                                    <div class="rantings">
+                                        <div >
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="region">
+                                            <div style="width: 20%"></div>
+                                        </div>
+                                        <h4>1</h4>
+                                    </div>
+                                    <div class="rantings">
+                                        <div >
+                                            <i class="fa fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="region">
+                                            <div></div>
+                                        </div>
+                                        <h4>0</h4>
+                                    </div>
+
+                                </div>
+                                <!-- Tab_ratings -->
+
+                                <!-- Tab_ review-->
+                                <div class="tab_review">
+                                    <div>
+                                        <div>
+                                            <a href="#">Nguyễn Văn A</a>
+                                            <p>26/09/2023 00:11 size:38 màu: đen</p>
+                                            <div>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>Vui mừng khi tìm thấy kích thước của mình nhưng chân trái cứ mỗi bước đi lại phát ra tiếng kêu cót két.</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <a href="#">Nguyễn Văn A</a>
+                                            <p>26/09/2023 00:11 size:38 màu: đen</p>
+                                            <div>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>Dịch vụ chuyển phát nhanh có chất lượng tốt nhất sẽ vận chuyển đơn hàng của bạn đến tay bạn trong thời gian ngắn nhất.</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <a href="#">Nguyễn Văn A</a>
+                                            <p>26/09/2023 00:11 size:38 màu: đen</p>
+                                            <div>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p> Giày đẹp, nhẹ, vừa vặn với bàn chân nhỏ của tôi.
+                                                Thích kiểu dáng cổ điển của những chiếc này và cũng rất thoải mái khi mặc ở phòng tập thể dục và đi bộ. Rất muốn giới thiệu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Tab_ review-->
+
+                                <!-- Tab_username -->
+                                <div class="tab_username">
+                                    <div id="review-form">
+                                        <form class="product_form">
+                                            <input class="input" type="text" placeholder="Name">
+                                            <input class="input" type="email" placeholder="Email">
+                                            <input class="input" type="text" placeholder="Comment">
+                                            <div class="input_rating">
+                                                <p>Rating: </p>
+                                                <div class="stars">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <button class="Submit_btn">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- Tab_username -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Product_information -->
+        </div> 
+    </main>
+</body>
+<script src="style.js" type="text/javascript"></script>
+</html>
