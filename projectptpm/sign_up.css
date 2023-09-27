@@ -1,18 +1,14 @@
 .a{
     width: 1500px;
-    /* height: 500px; */
-    /* background-color: antiquewhite; */
     margin: 0 auto;
     position: relative;
 }
 .login_form{
     width: 1400px;
-    /* height: 100vh; */
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background-image: url(img/loging_bg.png); */
     background-size: cover;
     background-position: center;
 }
